@@ -10,6 +10,7 @@ Android 自定义lint教学
 4. PngResourceDetector 扫描Png 大图检查 扫描的res文件
 5. RouteDetector 不允许项目内直接使用路由 
 6. ThreadDetector 这个是别人写的 线程构造的检查
+7. Rxjava & RxAndroid 检查，我写的
 
 
 ## 支持动态拔插的能力
