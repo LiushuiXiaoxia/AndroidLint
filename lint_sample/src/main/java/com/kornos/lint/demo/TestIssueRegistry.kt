@@ -17,6 +17,7 @@ package com.kornos.lint.demo
 
 import com.android.tools.lint.client.api.IssueRegistry
 import com.android.tools.lint.detector.api.Issue
+import com.kornos.lint.demo.rx.RxjavaDetector
 
 /*
  * The list of issues that will be checked when running <code>lint</code>.
@@ -26,21 +27,22 @@ class TestIssueRegistry : IssueRegistry() {
     override val issues: List<Issue>
         get() {
             val lintList = mutableListOf<Issue>(
-                RouteDetector.ISSUE,
-                RouteDetector.CALL_ISSUE,
-                LogDetector.ISSUE,
-                GlideUnusedDetector.ISSUE,
-                ThreadDetector.ISSUE,
-                PngResourceDetector.ISSUE,
-                EventSpaceDetector.ISSUE,
-                SafeFileDetector.ISSUE,
-                DynamicLint.ISSUE,
-                PrivacyClassDetector.ISSUE,
-                ContextCastDetector.ISSUE,
-                PreDrawDetector.ISSUE,
-                AlertDialogDetector.ISSUE,
-                FragmentHiddenDetector.ISSUE,
-                KAEDetector.ISSUE
+//                RouteDetector.ISSUE,
+//                RouteDetector.CALL_ISSUE,
+//                LogDetector.ISSUE,
+//                GlideUnusedDetector.ISSUE,
+//                ThreadDetector.ISSUE,
+//                PngResourceDetector.ISSUE,
+//                EventSpaceDetector.ISSUE,
+//                SafeFileDetector.ISSUE,
+//                DynamicLint.ISSUE,
+//                PrivacyClassDetector.ISSUE,
+//                ContextCastDetector.ISSUE,
+//                PreDrawDetector.ISSUE,
+//                AlertDialogDetector.ISSUE,
+//                FragmentHiddenDetector.ISSUE,
+//                KAEDetector.ISSUE,
+                RxjavaDetector.ISSUE,
             )
             /*   ServiceLoader.load(LintSpi::class.java).forEach {
                    it.issue().forEach { issue ->
