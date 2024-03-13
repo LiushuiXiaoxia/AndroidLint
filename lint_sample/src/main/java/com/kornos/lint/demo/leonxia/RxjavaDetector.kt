@@ -1,4 +1,4 @@
-package com.kornos.lint.demo.rx
+package com.kornos.lint.demo.leonxia
 
 import com.android.tools.lint.client.api.UElementHandler
 import com.android.tools.lint.detector.api.Category
