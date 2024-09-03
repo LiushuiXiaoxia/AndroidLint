@@ -1,4 +1,6 @@
 include ':lint-rules'
 include ':liba'
-include ':libs:libb'
+
+includeBuild("subs")
+
 include ':app'

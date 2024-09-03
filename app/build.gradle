@@ -53,6 +53,8 @@ dependencies {
     implementation "com.squareup.okio:okio:3.8.0"
 
     implementation project(':liba')
-    implementation project(":libs:libb")
+    implementation "com.kronos:libb"
+//    implementation project(":libb")
+
     lintChecks project(":lint-rules")
 }

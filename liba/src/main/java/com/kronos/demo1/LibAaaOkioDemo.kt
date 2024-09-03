@@ -7,7 +7,7 @@ import java.io.File
 @Suppress("DEPRECATION_ERROR")
 class LibAaaOkioDemo {
 
-    fun okioDemo4() {
+    fun okAaaa() {
         val file = File("")
         val okio = Okio.buffer(Okio.source(file))
     }

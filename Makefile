@@ -7,6 +7,7 @@ all:
 	echo "all done"
 
 lint:
+	cd subs && ./gradlew clean
 	./gradlew clean --console=plain
 	./gradlew lint --console=plain
 	#./gradlew :liba:lint --console=plain
