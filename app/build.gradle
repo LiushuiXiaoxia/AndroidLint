@@ -44,8 +44,7 @@ dependencies {
 
     implementation "com.squareup.okio:okio:2.2.2"
 
-
-    implementation project(":demo1")
-    implementation project(":subSample:demo2")
-    lintChecks project(":lint_sample")
+    implementation project(':liba')
+    implementation project(":libs:libb")
+    lintChecks project(":lint-rules")
 }
