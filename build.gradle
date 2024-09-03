@@ -27,10 +27,13 @@ allprojects {
                 || project.plugins.hasPlugin('com.android.library')) {
             def android = project.extensions.getByName('android')
             android.lintOptions {
+                disable 'TypographyFractions', 'TypographyQuotes'
                 abortOnError false
-                absolutePaths false
+                absolutePaths true
                 checkReleaseBuilds false
+                quiet true
                 xmlReport true
+                textReport true
             }
         }
     }

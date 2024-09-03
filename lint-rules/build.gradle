@@ -3,7 +3,8 @@ plugins {
     id "kotlin"
 }
 
-def lintVersion = "31.2.2"
+def lintVersion = "30.2.2"
+//def lintVersion = "31.2.2"
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])

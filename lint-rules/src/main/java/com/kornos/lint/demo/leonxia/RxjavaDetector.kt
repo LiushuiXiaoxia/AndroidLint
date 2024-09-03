@@ -22,7 +22,7 @@ class RxjavaDetector : Detector(), Detector.UastScanner {
             "RxJava v1 已不推荐使用，建议升级到 rxjava3 或使用协程代替",
             Category.CORRECTNESS,
             6,
-            Severity.WARNING,
+            Severity.ERROR,
             Implementation(RxjavaDetector::class.java, Scope.JAVA_FILE_SCOPE)
         )
     }
