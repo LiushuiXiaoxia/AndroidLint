@@ -1,4 +1,7 @@
 
 
 lint:
-	./gradlew clean :app:lintDebug --console=plain
+	./gradlew clean --console=plain
+	./gradlew assemble --console=plain
+	./gradlew :app:lintDebug --console=plain
+	echo "Linting done"
