@@ -1,0 +1,114 @@
+<!--
+  ~ Copyright (c) 2015-2017 BiliBili Inc.
+  -->
+<lint>
+    <!--
+  ~ 触发全量lint 
+  -->
+    <issue id="InvalidPackage">
+        <ignore regexp="okio.*jar" />
+        <ignore regexp="okhttp.*jar" />
+        <ignore regexp="retrofit.*jar" />
+        <ignore regexp="javapoet.*jar" />
+        <ignore regexp="junit.*jar" />
+        <ignore regexp="org.jacoco.*jar" />
+    </issue>
+
+
+    <issue id="SmallSp" severity="ignore" /> <!-- designer does right -->
+    <issue id="WebpUnsupported" severity="ignore" /> <!-- supported by fresco -->
+    <issue id="ContentDescription" severity="ignore" />
+    <issue id="PrivateResource" severity="ignore" />
+    <issue id="GoogleAppIndexingWarning" severity="ignore" />
+    <issue id="RtlHardcoded" severity="ignore" />
+    <issue id="TypographyEllipsis" severity="ignore" />
+    <issue id="IconMissingDensityFolder" severity="ignore" />
+    <issue id="UseSparseArrays" severity="ignore" />
+    <issue id="ShowToast" severity="ignore" />
+    <issue id="HardwareIds" severity="informational" />
+    <issue id="ObsoleteSdkInt" severity="warning" />
+    <issue id="MissingTranslation" severity="warning" />
+    <issue id="VisibleForTests" severity="error" /> <!-- test is a test -->
+    <issue id="IconDuplicates" severity="warning" />
+    <issue id="HandlerLeak" severity="error" />
+    <issue id="InefficientWeight" severity="error" />
+    <issue id="ObsoleteLayoutParam" severity="error" />
+    <issue id="StaticFieldLeak" severity="error" />
+    <issue id="IconDuplicatesConfig" severity="warning" />
+    <issue id="IconLocation" severity="error" />
+    <issue id="LongLogTag" severity="error" />
+    <issue id="OverrideAbstract" severity="error" />
+    <issue id="SdCardPath" severity="error" />
+    <issue id="ExportedContentProvider" severity="error" />
+    <issue id="ExportedReceiver" severity="error" />
+    <issue id="ExportedService" severity="error" />
+    <issue id="SetWorldReadable" severity="error" />
+    <issue id="SetWorldWritable" severity="error" />
+    <issue id="GrantAllUris" severity="error" />
+    <issue id="WorldReadableFiles" severity="error" />
+    <issue id="WorldWriteableFiles" severity="error" />
+    <issue id="ServiceCast" severity="error" />
+    <issue id="CommitPrefEdits" severity="error" />
+    <issue id="StringFormatInvalid" severity="error" />
+    <issue id="ResourceAsColor" severity="error" />
+    <issue id="ResourceType" severity="error" />
+    <issue id="WrongThread" severity="error" />
+    <issue id="WrongConstant" severity="error" />
+    <issue id="WrongViewCast" severity="error" />
+    <issue id="Wakelock" severity="error" />
+    <issue id="WebViewLayout" severity="error" />
+    <issue id="WrongCall" severity="error" />
+    <issue id="WrongCase" severity="error" />
+    <issue id="InvalidId" severity="error" />
+    <issue id="NotSibling" severity="error" />
+    <issue id="UnknownId" severity="error" />
+    <issue id="UnknownIdInLayout" severity="error" />
+    <issue id="WrongFolder" severity="error" />
+    <issue id="NestedWeights" severity="error" />
+    <issue id="Overdraw" severity="warning" />
+    <issue id="VectorPath" severity="warning" />
+    <issue id="DrawAllocation" severity="error" />
+    <issue id="UnusedResources" severity="warning">
+        <ignore path="res\values\gradleResValues.xml" />
+        <ignore path="res\values\push_strings.xml" />
+        <ignore regexp="push*" />
+    </issue>
+    <issue id="UselessLeaf" severity="warning" />
+    <issue id="UselessParent" severity="warning" />
+    <issue id="Deprecated" severity="warning" />
+    <issue id="AddJavascriptInterface" severity="error" />
+    <issue id="JavascriptInterface" severity="error" />
+    <issue id="ShortAlarm" severity="error" />
+    <issue id="HardcodedText" severity="warning" />
+    <issue id="TooManyViews" severity="error" />
+    <issue id="TooDeepLayout" severity="error" />
+    <issue id="ExportedPreferenceActivity" severity="error" />
+    <issue id="Recycle" severity="warning" />
+    <issue id="ViewHolder" severity="warning" />
+    <issue id="DisableBaselineAlignment" severity="warning" />
+    <issue id="MissingPermission" severity="error" />
+    <issue id="UniquePermission" severity="warning" />
+    <issue id="RestrictedApi" severity="error" />
+    <issue id="DuplicateActivity" severity="error" />
+    <issue id="SecureRandom" severity="error" />
+    <issue id="WifiManagerLeak" severity="error" />
+    <issue id="WifiManagerPotentialLeak" severity="error" />
+    <issue id="StateListReachable" severity="error" />
+    <issue id="UnusedIds" severity="warning" />
+    <issue id="DiscouragedPrivateApi" severity="error" />
+    <issue id="DuplicateStrings" severity="warning" />
+    <issue id="MissingSuperCall" severity="warning" />
+    <issue id="UnusedAttribute" severity="warning" />
+    <issue id="Instantiatable" severity="warning" />
+    <issue id="UseAppTint" severity="warning" />
+    <issue id="MissingClass" severity="warning" />
+    <issue id="QueryAllPackagesPermission" severity="warning"/>
+    <issue id="NetworkSecurityConfig" severity="warning">
+        <ignore path="\res\xml\network_security_config.xml" />
+    </issue>
+    <issue id="InvalidSetHasFixedSize" severity="error" />
+    <issue id="GradleDynamicVersion" severity="error" />
+    <issue id="NullSafeMutableLiveData" severity="error" />
+    <issue id="UseRequireInsteadOfGet" severity="error" />
+    <issue id="RemoveWorkManagerInitializer" severity="warning" />
+</lint>

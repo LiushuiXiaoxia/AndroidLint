@@ -1,5 +1,5 @@
 buildscript {
-    ext.kotlin_version = '1.9.23'
+    ext.kotlin_version = '2.0.0'
     repositories {
         maven {
             url 'https://maven.aliyun.com/repository/central/'
@@ -27,14 +27,15 @@ allprojects {
                 || project.plugins.hasPlugin('com.android.library')) {
             def android = project.extensions.getByName('android')
             android.lintOptions {
-                disable 'TypographyFractions', 'TypographyQuotes'
+                lintConfig new File(rootDir, 'lint.xml')
                 abortOnError false
-                absolutePaths true
-                checkReleaseBuilds false
-                checkDependencies false
+//                absolutePaths true
+                checkReleaseBuilds true
+                checkDependencies true
                 quiet true
                 xmlReport true
                 textReport true
+                explainIssues true
             }
             logger.quiet("setup ${project.name} lintOptions")
         }
