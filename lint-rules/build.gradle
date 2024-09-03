@@ -1,15 +1,16 @@
 plugins {
-    id 'java-library'
-    id 'kotlin'
-    id 'kotlin-kapt'
+    id "java"
+    id "kotlin"
 }
 
+def lintVersion = "31.2.2"
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    compileOnly 'com.android.tools.lint:lint-api:30.3.0'
-    compileOnly 'com.android.tools.lint:lint-checks:30.3.0'
-    implementation 'com.google.code.gson:gson:2.10'
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    compileOnly "com.android.tools.lint:lint-api:$lintVersion"
+    compileOnly "com.android.tools.lint:lint-checks:$lintVersion"
+    implementation "com.google.code.gson:gson:2.11.0"
 }
 
 sourceCompatibility = "17"
