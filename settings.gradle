@@ -1,3 +1,4 @@
-include ':app', ':lint_sample'
+include ':lint_sample'
 include ':demo1'
 include ':subSample:demo2'
+include ':app'

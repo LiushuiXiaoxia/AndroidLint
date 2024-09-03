@@ -31,10 +31,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    namespace 'com.kronos.demo1'
 }
 
 dependencies {
-
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.5.0'
     implementation 'androidx.appcompat:appcompat:1.3.0'
