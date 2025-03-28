@@ -33,6 +33,8 @@ android {
 
     kotlinOptions {
         jvmTarget = "17"
+        // 测试lint
+        languageVersion = "1.9"
     }
 }
 
