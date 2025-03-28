@@ -18,6 +18,7 @@ package com.kornos.lint.demo
 import com.android.tools.lint.client.api.IssueRegistry
 import com.android.tools.lint.client.api.Vendor
 import com.android.tools.lint.detector.api.Issue
+import com.kornos.lint.demo.leonxia.KotlinLvDetector
 import com.kornos.lint.demo.leonxia.RxjavaDetector
 import com.kornos.lint.demo.leonxia.SuppressDetector
 
@@ -44,8 +45,9 @@ class TestIssueRegistry : IssueRegistry() {
 //                AlertDialogDetector.ISSUE,
 //                FragmentHiddenDetector.ISSUE,
 //                KAEDetector.ISSUE,
-                RxjavaDetector.ISSUE,
-                SuppressDetector.ISSUE,
+//                RxjavaDetector.ISSUE,
+//                SuppressDetector.ISSUE,
+                KotlinLvDetector.ISSUE,
             )
             /*   ServiceLoader.load(LintSpi::class.java).forEach {
                    it.issue().forEach { issue ->
