@@ -1,0 +1,30 @@
+buildscript {
+    ext.kotlin_version = '2.0.0'
+    repositories {
+        maven {
+            url 'https://maven.aliyun.com/repository/central/'
+        }
+        google()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.2.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        //   classpath("com.sankuai.waimai.router:plugin:1.2.0")
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url 'https://maven.aliyun.com/repository/central/'
+        }
+        google()
+    }
+
+    group "com.kronos"
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

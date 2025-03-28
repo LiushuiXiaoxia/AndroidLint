@@ -10,8 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
  * @Since 2020/10/15
  */
 class Adapter(itemView: View) : RecyclerView.ViewHolder(itemView) {
+
     init {
         itemView.findViewById<ImageView>(R.id.tv1)
     }
-
 }
